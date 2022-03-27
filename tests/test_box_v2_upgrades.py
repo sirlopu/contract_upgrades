@@ -27,6 +27,8 @@ def test_proxy_upgrades():
         box_encoded_initializer_function,
         {"from": account, "gas_limit": 1000000},
     )
+
+    # deploy boxV2
     box_v2 = BoxV2.deploy(
         {"from": account},
     )
